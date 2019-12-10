@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-3">
+        <p>ジャンル</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.get_type_display }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>書名</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.name }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>著者</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.author }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>評価</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.get_grade_display }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>感想</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.memo|linebreaksbr }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>登録日</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.created_at|date:"Y/m/d G:i:s" }}</p>
+    </div>
+</div>
